@@ -37,6 +37,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         architecture: x64
+    - name: Download a single artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: my-artifact
     - name: running java
       run : |
           dir
