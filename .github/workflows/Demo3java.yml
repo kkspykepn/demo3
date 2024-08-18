@@ -24,6 +24,13 @@ jobs:
     container:
       image: node:18
     steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 11 for x64
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        architecture: x64
     - name: running java
       run : |
           dir
