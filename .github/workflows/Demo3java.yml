@@ -2,7 +2,7 @@ name: javaRunner
 
 on: [ push, pull_request ]
 jobs:
-  demo3:
+  demo31:
     runs-on: ubuntu-latest
     container:
       image: node:18
@@ -19,6 +19,11 @@ jobs:
           dir
           javac Hello.java
           dir
+  demo32:
+    runs-on: ubuntu-latest
+    container:
+      image: node:18
+    steps:
     - name: running java
       run : |
           dir
