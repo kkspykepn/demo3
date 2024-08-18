@@ -14,7 +14,13 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         architecture: x64
-    - name: running java
+    - name: running javac
       run: |
+          dir
           javac Hello.java
+          dir
+    - name: running java
+      run : |
+          dir
           java Hello
+          dir
